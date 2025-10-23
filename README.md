@@ -1,27 +1,38 @@
-Airbnb Data Analysis
-This project analyzes Airbnb data to gain insights into pricing trends, availability patterns, and the impact of various factors like location, property type, and amenities on pricing.
+# Singapore HDB Flat Resale Analysis
 
-Data Source
-The data is retrieved from a MongoDB Atlas cluster.
+This project analyzes Singapore HDB resale flat data to gain insights into pricing trends, factors affecting resale prices, and the impact of various attributes like flat type, floor area, town, and lease period on pricing.
 
-Analysis and Insights
+---
+
+## Analysis and Insights
+
 The analysis covers several key areas:
 
-Geospatial Visualization: Visualizing the distribution of Airbnb listings and their prices globally to identify price hotspots.
-Price Analysis: Examining the distribution of prices and identifying outliers.
-Location-Based Insights: Analyzing average prices in different locations to understand regional pricing variations.
-Property Type Analysis: Investigating the average prices for different property types to identify premium and budget-friendly options.
-Seasonal Availability and Pricing: Analyzing how availability and pricing vary across different seasons.
-Correlation Analysis: Exploring the relationships between numerical features like price, bedrooms, bathrooms, and availability.
-Amenities Analysis: Examining the impact of different amenities on average prices and their distribution across property types.
-Some key insights from the analysis include:
+- **Geospatial Visualization:** Mapping resale prices across towns to identify price hotspots and regional trends.  
+- **Price Analysis:** Examining the distribution of resale prices and detecting outliers.  
+- **Location-Based Insights:** Comparing average resale prices in different towns to understand regional variations.  
+- **Flat Type Analysis:** Investigating resale price differences among flat types such as 2-room, 3-room, and 5-room flats.  
+- **Lease and Age Analysis:** Analyzing how the remaining lease and age of the flat impact resale prices.  
+- **Correlation Analysis:** Exploring relationships between numerical features like floor area, lease duration, and resale price.
 
-Properties with more bedrooms and bathrooms tend to have higher prices.
-Certain locations and property types are associated with significantly higher average prices.
-Availability across different time periods is highly correlated.
-Some amenities are associated with higher average prices, likely due to catering to luxury stays.
-Future Implementation
-This project can be further enhanced by deploying it as a web application using Streamlit. This would allow users to interact with the data and visualizations, making the insights more accessible and actionable.
+### Key Insights
 
-How to Run the Notebook
-Ensure you have Python and the necessary libraries installed (pymongo, pandas, numpy, plotly, geopy, seaborn, matplotlib). You can install them using pip:
+- Flats with larger floor areas and more rooms tend to have higher resale prices.  
+- Certain towns are associated with significantly higher average prices.  
+- Older flats or flats with shorter remaining leases generally have lower prices.  
+- Flat type and location together are strong indicators of resale price trends.
+
+---
+
+## Future Implementation
+
+This project can be further enhanced by deploying it as an interactive web application using **Streamlit**, allowing users to explore pricing trends, visualize geospatial distributions, and predict resale prices based on selected parameters.
+
+---
+
+## How to Run the Notebook
+
+Ensure you have **Python** and the necessary libraries installed:
+
+```bash
+pip install pandas numpy matplotlib seaborn plotly scikit-learn streamlit
